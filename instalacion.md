@@ -22,6 +22,7 @@ A continuación instalamos Tcl, Apache y suexec.
 sudo apt-get install apache2
 sudo apt-get install apache2-suexec
 </pre>
+
 En caso de que no se encuentre el paquete apache2-suexec, se puede instalar el apache2-suexec-custom.
 
 Una vez se ha instalado Apache, es encesario habilitar dos mods:
@@ -39,7 +40,9 @@ sudo ln -s ../mods-available/suexec.load
 
    <pre>ln: failed to create symbolic link './suexec.load': File exists</pre>
 
-No preocuparse por ello. El siguiente paso es configurar el soporte ce CGIs. Para ello hay que editar el archivo:/etc/apache2/mods-enabled/userdir.conf incluyendo el siguiente código dentro de la configuración del archivo userdir.conf.
+No preocuparse por ello. 
+
+El siguiente paso es configurar el soporte ce CGIs. Para ello hay que editar el archivo: /etc/apache2/mods-enabled/userdir.conf incluyendo el siguiente código dentro de la configuración del archivo userdir.conf.
     
 <pre>Options +ExecCGI -Includes -Indexes
 SetHandler cgi-script
