@@ -8,3 +8,5 @@ Después se explicará desde la vista del alumno.
 
 
 
+Todo este manual está disponible para descargar o ver en línea en el siguiente enlace: https://www.gitbook.com/book/savinspm/mooshak/details
+
