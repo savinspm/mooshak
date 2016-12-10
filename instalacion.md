@@ -33,14 +33,15 @@ sudo a2enmod userdir
     sudo a2enmod suexec
 </pre>
 Después habilitamos el userdir y el usexec modulos de Apache.
-<pre>
-cd /etc/apache2/mods-enabled
+
+```
+    cd /etc/apache2/mods-enabled
     sudo ln -s ../mods-available/userdir.conf
     sudo ln -s ../mods-available/userdir.load
     sudo ln -s ../mods-available/suexec.load
-    </pre>
-    
+```    
     Es posible que haya salido el siguiente mensaje:
+
     <pre>
     ln: failed to create symbolic link './suexec.load': File exists
     </pre>
