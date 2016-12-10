@@ -73,7 +73,8 @@ UserDir disabled root
 En el archivo /etc/apache2/apache2.conf añadimos la línea 
         
 <pre>ServerName mooshak</pre>
-        En mi caso, mi servidor se llama mooshak, indicale el nombre de tu servidor. Después de todos estos cambios, reiniciamos el servicios de apache. 
+
+En mi caso, mi servidor se llama mooshak, indicale el nombre de tu servidor. Después de todos estos cambios, reiniciamos el servicios de apache. 
         
 <pre>sudo service apache2 restart</pre>
                 
