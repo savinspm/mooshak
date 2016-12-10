@@ -42,9 +42,9 @@ Después habilitamos el userdir y el usexec modulos de Apache.
 </pre> 
     Es posible que haya salido el siguiente mensaje:
 
-    <pre>
+   
     ln: failed to create symbolic link './suexec.load': File exists
-    </pre>
+    
     
     No preocuparse por ello. El siguiente paso es configurar el soporte ce CGIs. Para ello hay que editar el archivo:/etc/apache2/mods-enabled/userdir.conf incluyendo el siguiente código dentro de la configuración del archivo userdir.conf.
     
