@@ -22,8 +22,6 @@ El siguiente paso consiste en instalar el compilar de c y el programa make
 
 En caso de que no se encuentre el paquete apache2-suexec, se puede instalar el apache2-suexec-custom.
 
-
-
 Una vez se ha instalado Apache, es necesario habilitar dos mods:
 
 `sudo a2enmod userdir`
@@ -39,4 +37,8 @@ Después habilitamos el userdir y el usexec modulos de Apache.
 `sudo ln -s ../mods-available/userdir.load`
 
 `sudo ln -s ../mods-available/suexec.load`
+
+Es posible que haya salido el siguiente mensaje:
+
+ln: failed to create symbolic link ‘./suexec.load’: File exists
 
