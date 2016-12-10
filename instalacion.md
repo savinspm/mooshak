@@ -14,21 +14,21 @@ Suponiendo que se empieza con una instalación limpia, el primer paso es actuali
 
 El siguiente paso consiste en instalar el compilar de c y el programa make
 
-`sudo apt-get install tcl xsltproc lpr rsync gcc libxml2-utils        
-sudo apt-get install apache2        
+`sudo apt-get install tcl xsltproc lpr rsync gcc libxml2-utils          
+sudo apt-get install apache2          
 sudo apt-get install apache2-suexec`
 
 En caso de que no se encuentre el paquete apache2-suexec, se puede instalar el apache2-suexec-custom.
 
 Una vez se ha instalado Apache, es necesario habilitar dos mods:  
-`sudo a2enmod userdir        
+`sudo a2enmod userdir          
  sudo a2enmod suexec`
 
 Después habilitamos el userdir y el usexec modulos de Apache.
 
-`cd /etc/apache2/mods-enabled        
-sudo ln -s ../mods-available/userdir.conf        
-sudo ln -s ../mods-available/userdir.load        
+`cd /etc/apache2/mods-enabled          
+sudo ln -s ../mods-available/userdir.conf          
+sudo ln -s ../mods-available/userdir.load          
 sudo ln -s ../mods-available/suexec.load`
 
 Es posible que haya salido el siguiente mensaje:
@@ -37,8 +37,12 @@ Es posible que haya salido el siguiente mensaje:
 
 No preocuparse por ello. El siguiente paso es configurar el soporte de CGIs. Para ello hay que editar el archivo: /etc/apache2/mods-enabled/userdir.conf incluyendo el siguiente código dentro de la configuración del archivo userdir.conf.
 
-`Options +ExecCGI -Includes -Indexes  
-SetHandler cgi-script  
-Order allow, deny  
+`Options +ExecCGI -Includes -Indexes    
+SetHandler cgi-script    
+Order allow, deny    
 Allow from all`
+
+De tal forma que el archivo userdir.conf quedaría como sigue:
+
+
 
