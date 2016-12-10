@@ -34,12 +34,12 @@ sudo a2enmod userdir
 </pre>
 Después habilitamos el userdir y el usexec modulos de Apache.
 
-```
+<pre>
     cd /etc/apache2/mods-enabled
     sudo ln -s ../mods-available/userdir.conf
     sudo ln -s ../mods-available/userdir.load
     sudo ln -s ../mods-available/suexec.load
-```   
+</pre> 
     Es posible que haya salido el siguiente mensaje:
 
     <pre>
