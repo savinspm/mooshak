@@ -38,6 +38,7 @@ sudo ln -s ../mods-available/suexec.load
     Es posible que haya salido el siguiente mensaje:
 
    <pre>ln: failed to create symbolic link './suexec.load': File exists</pre>
+
 No preocuparse por ello. El siguiente paso es configurar el soporte ce CGIs. Para ello hay que editar el archivo:/etc/apache2/mods-enabled/userdir.conf incluyendo el siguiente código dentro de la configuración del archivo userdir.conf.
     
 <pre>Options +ExecCGI -Includes -Indexes
@@ -73,7 +74,7 @@ En el archivo /etc/apache2/apache2.conf añadimos la línea
         
 <pre>sudo service apache2 restart</pre>
                 
-Habilitamo los módulos CGI en Apache para configurar CGI en apache
+Habilitamos los módulos CGI en Apache para configurar CGI en apache
                 
 <pre>sudo a2enmod cgi</pre>
                 
@@ -96,7 +97,7 @@ Por último se instala:
 <pre>sudo ./install
 </pre>
 
-Puede que salga un mensaje similar a 
+Puede que salga un mensaje similar a:
 
 <pre>Prerequisites Ok. Installing Mooshak on ubuntu, Apache 2.4
 home dir created
@@ -108,7 +109,7 @@ connecting to host localhost ... connected!
 could not find user name in the output of 'info'
 </pre>
 
-No nos preocupamos, reiniciamos el servidor apache
+No nos preocupamos, reiniciamos el servidor apache:
 
 <pre>sudo service apache2 restart
 </pre>
