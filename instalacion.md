@@ -39,7 +39,7 @@ Después habilitamos el userdir y el usexec modulos de Apache.
     sudo ln -s ../mods-available/userdir.conf
     sudo ln -s ../mods-available/userdir.load
     sudo ln -s ../mods-available/suexec.load
-```    
+```   
     Es posible que haya salido el siguiente mensaje:
 
     <pre>
