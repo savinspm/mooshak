@@ -56,7 +56,7 @@ No preocuparse por ello. El siguiente paso es configurar el soporte ce CGIs. Par
         
 De tal forma que el archivo userdir.conf quedaría como sigue:
         
-        <pre>
+<pre>
         UserDir public_html
         UserDir disabled root
 
@@ -80,7 +80,7 @@ De tal forma que el archivo userdir.conf quedaría como sigue:
 
 
 # vim: syntax=apache ts=4 sw=4 sts=4 sr noet
-        </pre>
+</pre>
         
         En el archivo /etc/apache2/apache2.conf añadimos la línea 
         
