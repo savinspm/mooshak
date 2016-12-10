@@ -54,7 +54,7 @@ No preocuparse por ello. El siguiente paso es configurar el soporte ce CGIs. Par
         Allow from all
         </pre>
         
-     
+     De tal forma que el archivo userdir.conf quedaría como sigue:
         
         <pre>
         UserDir public_html
