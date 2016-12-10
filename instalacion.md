@@ -45,8 +45,7 @@ Después habilitamos el userdir y el usexec modulos de Apache.
    <pre>
     ln: failed to create symbolic link './suexec.load': File exists
     </pre>
-    
-    
+
     <pre>
     Options +ExecCGI -Includes -Indexes
         SetHandler cgi-script
