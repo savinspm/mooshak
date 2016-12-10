@@ -16,6 +16,7 @@ El siguiente paso consiste en instalar el compilador de c y el programa make
 <pre>sudo apt-get install gcc
 sudo apt-get install make
 </pre>
+
 A continuación instalamos Tcl, Apache y suexec.
 
 <pre>sudo apt-get install tcl xsltproc lpr rsync gcc libxml2-utils
@@ -26,9 +27,11 @@ sudo apt-get install apache2-suexec
 En caso de que no se encuentre el paquete apache2-suexec, se puede instalar el apache2-suexec-custom.
 
 Una vez se ha instalado Apache, es encesario habilitar dos mods:
+
 <pre>sudo a2enmod userdir
 sudo a2enmod suexec
 </pre>
+
 Después habilitamos el userdir y el usexec modulos de Apache.
 
 <pre>cd /etc/apache2/mods-enabled
@@ -36,9 +39,10 @@ sudo ln -s ../mods-available/userdir.conf
 sudo ln -s ../mods-available/userdir.load
 sudo ln -s ../mods-available/suexec.load
 </pre> 
-    Es posible que haya salido el siguiente mensaje:
 
-   <pre>ln: failed to create symbolic link './suexec.load': File exists</pre>
+Es posible que haya salido el siguiente mensaje:
+
+<pre>ln: failed to create symbolic link './suexec.load': File exists</pre>
 
 No preocuparse por ello. 
 
@@ -98,6 +102,7 @@ Una vez descargado, lo descomprimimos.
 cd mooshak-1.6.2/ </pre>
 
 Por último se instala:
+
 <pre>sudo ./install
 </pre>
 
@@ -117,4 +122,5 @@ No nos preocupamos, reiniciamos el servidor apache:
 
 <pre>sudo service apache2 restart
 </pre>
+
 y probamos en nuestro equipo. En mi caso es: http://192.168.64.187/~mooshak/ Aparecerá algo similar a:![Página principal de Mooshak](images/index.png)
